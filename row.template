@@ -1,0 +1,39 @@
+set title 'DS / eic=EIC / sync'
+
+set ylabel 'LABEL'
+
+plot "data/MACHINE/DATASET/bitmapscan/EIC-sync-3-BUFFERS-master.data"            using X:Y with points pt 7 ps 0.75 title "bitmapscan (master)", \
+     "data/MACHINE/DATASET/bitmapscan/EIC-sync-3-BUFFERS-prefetch-simple.data"   using X:Y with points pt 7 ps 0.75 title "bitmapscan (simple)", \
+     "data/MACHINE/DATASET/bitmapscan/EIC-sync-3-BUFFERS-prefetch-complex.data"  using X:Y with points pt 7 ps 0.75 title "bitmapscan (complex)", \
+     "data/MACHINE/DATASET/indexscan/EIC-sync-3-BUFFERS-master.data"             using X:Y with points pt 7 ps 0.75 title "indexscan (master)", \
+     "data/MACHINE/DATASET/indexscan/EIC-sync-3-BUFFERS-prefetch-simple.data"    using X:Y with points pt 7 ps 0.75 title "indexscan (simple)", \
+     "data/MACHINE/DATASET/indexscan/EIC-sync-3-BUFFERS-prefetch-complex.data"   using X:Y with points pt 7 ps 0.75 title "indexscan (complex)"
+
+unset ylabel
+
+set title 'DS / eic=EIC / worker-3'
+
+plot "data/MACHINE/DATASET/bitmapscan/EIC-worker-3-BUFFERS-master.data"            using X:Y with points pt 7 ps 0.75 title "bitmapscan (master)", \
+     "data/MACHINE/DATASET/bitmapscan/EIC-worker-3-BUFFERS-prefetch-simple.data"   using X:Y with points pt 7 ps 0.75 title "bitmapscan (simple)", \
+     "data/MACHINE/DATASET/bitmapscan/EIC-worker-3-BUFFERS-prefetch-complex.data"  using X:Y with points pt 7 ps 0.75 title "bitmapscan (complex)", \
+     "data/MACHINE/DATASET/indexscan/EIC-worker-3-BUFFERS-master.data"             using X:Y with points pt 7 ps 0.75 title "indexscan (master)", \
+     "data/MACHINE/DATASET/indexscan/EIC-worker-3-BUFFERS-prefetch-simple.data"    using X:Y with points pt 7 ps 0.75 title "indexscan (simple)", \
+     "data/MACHINE/DATASET/indexscan/EIC-worker-3-BUFFERS-prefetch-complex.data"   using X:Y with points pt 7 ps 0.75 title "indexscan (complex)"
+
+set title 'DS / eic=EIC / worker-12'
+
+plot "data/MACHINE/DATASET/bitmapscan/EIC-worker-12-BUFFERS-master.data"            using X:Y with points pt 7 ps 0.75 title "bitmapscan (master)", \
+     "data/MACHINE/DATASET/bitmapscan/EIC-worker-12-BUFFERS-prefetch-simple.data"   using X:Y with points pt 7 ps 0.75 title "bitmapscan (simple)", \
+     "data/MACHINE/DATASET/bitmapscan/EIC-worker-12-BUFFERS-prefetch-complex.data"  using X:Y with points pt 7 ps 0.75 title "bitmapscan (complex)", \
+     "data/MACHINE/DATASET/indexscan/EIC-worker-12-BUFFERS-master.data"             using X:Y with points pt 7 ps 0.75 title "indexscan (master)", \
+     "data/MACHINE/DATASET/indexscan/EIC-worker-12-BUFFERS-prefetch-simple.data"    using X:Y with points pt 7 ps 0.75 title "indexscan (simple)", \
+     "data/MACHINE/DATASET/indexscan/EIC-worker-12-BUFFERS-prefetch-complex.data"   using X:Y with points pt 7 ps 0.75 title "indexscan (complex)"
+
+set title 'DS / eic=EIC / io\_uring'
+
+plot "data/MACHINE/DATASET/bitmapscan/EIC-io_uring-3-BUFFERS-master.data"            using X:Y with points pt 7 ps 0.75 title "bitmapscan (master)", \
+     "data/MACHINE/DATASET/bitmapscan/EIC-io_uring-3-BUFFERS-prefetch-simple.data"   using X:Y with points pt 7 ps 0.75 title "bitmapscan (simple)", \
+     "data/MACHINE/DATASET/bitmapscan/EIC-io_uring-3-BUFFERS-prefetch-complex.data"  using X:Y with points pt 7 ps 0.75 title "bitmapscan (complex)", \
+     "data/MACHINE/DATASET/indexscan/EIC-io_uring-3-BUFFERS-master.data"             using X:Y with points pt 7 ps 0.75 title "indexscan (master)", \
+     "data/MACHINE/DATASET/indexscan/EIC-io_uring-3-BUFFERS-prefetch-simple.data"    using X:Y with points pt 7 ps 0.75 title "indexscan (simple)", \
+     "data/MACHINE/DATASET/indexscan/EIC-io_uring-3-BUFFERS-prefetch-complex.data"   using X:Y with points pt 7 ps 0.75 title "indexscan (complex)"
