@@ -50,7 +50,7 @@ plot "data/d16/cyclic/bitmapscan/16-io_uring-3-32GB-master.data"            usin
      "data/d16/cyclic/indexscan/16-io_uring-3-32GB-prefetch-simple.data"    using 1:4 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
      "data/d16/cyclic/indexscan/16-io_uring-3-32GB-prefetch-complex.data"   using 1:4 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
 set title 'timing (warm) / cyclic\\_1 / eic=16' font 'Verdana Bold,12'
-set xrange[0.000869999304000557:100]
+set xrange[0.000829999336000531:100]
 set title 'cyclic\_1 / eic=16 / sync'
 
 set ylabel 'timing (warm)'
