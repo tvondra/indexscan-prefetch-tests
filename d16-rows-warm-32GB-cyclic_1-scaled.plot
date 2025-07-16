@@ -9,7 +9,7 @@ set xlabel 'selectivity'
 
 set multiplot layout 4,4 rowsfirst
 set title 'timing (warm) / cyclic\\_1 / eic=0' font 'Verdana Bold,12'
-set xrange[0.000829999336000531:100]
+set xrange[0.000619999504000397:100]
 set yrange[0:5004.505]
 set title 'cyclic\_1 / eic=0 / sync'
 
@@ -51,7 +51,7 @@ plot "data/d16/cyclic_1/bitmapscan/0-io_uring-3-32GB-master.data"            usi
      "data/d16/cyclic_1/indexscan/0-io_uring-3-32GB-prefetch-simple.data"    using 1:4 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
      "data/d16/cyclic_1/indexscan/0-io_uring-3-32GB-prefetch-complex.data"   using 1:4 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
 set title 'timing (warm) / cyclic\\_1 / eic=1' font 'Verdana Bold,12'
-set xrange[0.000829999336000531:100]
+set xrange[0.000619999504000397:100]
 set yrange[0:5004.505]
 set title 'cyclic\_1 / eic=1 / sync'
 
@@ -93,7 +93,7 @@ plot "data/d16/cyclic_1/bitmapscan/1-io_uring-3-32GB-master.data"            usi
      "data/d16/cyclic_1/indexscan/1-io_uring-3-32GB-prefetch-simple.data"    using 1:4 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
      "data/d16/cyclic_1/indexscan/1-io_uring-3-32GB-prefetch-complex.data"   using 1:4 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
 set title 'timing (warm) / cyclic\\_1 / eic=16' font 'Verdana Bold,12'
-set xrange[0.000829999336000531:100]
+set xrange[0.000619999504000397:100]
 set yrange[0:5004.505]
 set title 'cyclic\_1 / eic=16 / sync'
 
@@ -135,7 +135,7 @@ plot "data/d16/cyclic_1/bitmapscan/16-io_uring-3-32GB-master.data"            us
      "data/d16/cyclic_1/indexscan/16-io_uring-3-32GB-prefetch-simple.data"    using 1:4 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
      "data/d16/cyclic_1/indexscan/16-io_uring-3-32GB-prefetch-complex.data"   using 1:4 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
 set title 'timing (warm) / cyclic\\_1 / eic=64' font 'Verdana Bold,12'
-set xrange[0.000829999336000531:100]
+set xrange[0.000619999504000397:100]
 set yrange[0:5004.505]
 set title 'cyclic\_1 / eic=64 / sync'
 
