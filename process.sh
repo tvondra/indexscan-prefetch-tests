@@ -21,6 +21,26 @@ sqlite3 scans.db <<EOF
 EOF
 
 sqlite3 scans.db <<EOF
+.headers on
+.mode csv
+.output export.csv
+SELECT
+    seq,
+    dataset,
+    scan,
+    eic,
+    version,
+    io_method,
+    io_workers,
+    shared_buffers,
+    round(rows * 100.0 / total_rows,3) AS selectivity_rows,
+    round(pages * 100.0 / total_pages,3) AS selectivity_pages,
+    timing_cold,
+    timing_warm numeric
+FROM results_d16
+EOF
+
+sqlite3 scans.db <<EOF
 create index idx1 on results_d16 (dataset,scan,eic,io_method,io_workers,shared_buffers);
 analyze;
 EOF
