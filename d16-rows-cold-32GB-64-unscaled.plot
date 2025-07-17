@@ -132,7 +132,7 @@ plot "data/d16/cyclic_10/bitmapscan/64-io_uring-3-32GB-master.data"            u
      "data/d16/cyclic_10/indexscan/64-io_uring-3-32GB-prefetch-simple.data"    using 1:3 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
      "data/d16/cyclic_10/indexscan/64-io_uring-3-32GB-prefetch-complex.data"   using 1:3 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
 set title 'timing (cold) / cyclic\\_25 / eic=64' font 'Verdana Bold,12'
-set xrange[0.00049999960000032:100]
+set xrange[0.000369999704000237:100]
 set title 'cyclic\_25 / eic=64 / sync'
 
 set ylabel 'timing (cold)'
@@ -173,7 +173,7 @@ plot "data/d16/cyclic_25/bitmapscan/64-io_uring-3-32GB-master.data"            u
      "data/d16/cyclic_25/indexscan/64-io_uring-3-32GB-prefetch-simple.data"    using 1:3 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
      "data/d16/cyclic_25/indexscan/64-io_uring-3-32GB-prefetch-complex.data"   using 1:3 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
 set title 'timing (cold) / linear / eic=64' font 'Verdana Bold,12'
-set xrange[0.00099999920000064:100]
+set xrange[0.000989999208000634:100]
 set title 'linear / eic=64 / sync'
 
 set ylabel 'timing (cold)'
@@ -337,7 +337,7 @@ plot "data/d16/linear_25/bitmapscan/64-io_uring-3-32GB-master.data"            u
      "data/d16/linear_25/indexscan/64-io_uring-3-32GB-prefetch-simple.data"    using 1:3 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
      "data/d16/linear_25/indexscan/64-io_uring-3-32GB-prefetch-complex.data"   using 1:3 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
 set title 'timing (cold) / uniform / eic=64' font 'Verdana Bold,12'
-set xrange[0.000760010640148962:100]
+set xrange[0.000700009800137202:100]
 set title 'uniform / eic=64 / sync'
 
 set ylabel 'timing (cold)'

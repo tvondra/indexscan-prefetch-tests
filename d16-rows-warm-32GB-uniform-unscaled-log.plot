@@ -10,7 +10,7 @@ set xlabel 'selectivity'
 
 set multiplot layout 4,4 rowsfirst
 set title 'timing (warm) / uniform / eic=0' font 'Verdana Bold,12'
-set xrange[0.000760010640148962:100]
+set xrange[0.000700009800137202:100]
 set title 'uniform / eic=0 / sync'
 
 set ylabel 'timing (warm)'
@@ -51,7 +51,7 @@ plot "data/d16/uniform/bitmapscan/0-io_uring-3-32GB-master.data"            usin
      "data/d16/uniform/indexscan/0-io_uring-3-32GB-prefetch-simple.data"    using 1:4 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
      "data/d16/uniform/indexscan/0-io_uring-3-32GB-prefetch-complex.data"   using 1:4 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
 set title 'timing (warm) / uniform / eic=1' font 'Verdana Bold,12'
-set xrange[0.000760010640148962:100]
+set xrange[0.000700009800137202:100]
 set title 'uniform / eic=1 / sync'
 
 set ylabel 'timing (warm)'
@@ -92,7 +92,7 @@ plot "data/d16/uniform/bitmapscan/1-io_uring-3-32GB-master.data"            usin
      "data/d16/uniform/indexscan/1-io_uring-3-32GB-prefetch-simple.data"    using 1:4 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
      "data/d16/uniform/indexscan/1-io_uring-3-32GB-prefetch-complex.data"   using 1:4 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
 set title 'timing (warm) / uniform / eic=16' font 'Verdana Bold,12'
-set xrange[0.000760010640148962:100]
+set xrange[0.000700009800137202:100]
 set title 'uniform / eic=16 / sync'
 
 set ylabel 'timing (warm)'
@@ -133,7 +133,7 @@ plot "data/d16/uniform/bitmapscan/16-io_uring-3-32GB-master.data"            usi
      "data/d16/uniform/indexscan/16-io_uring-3-32GB-prefetch-simple.data"    using 1:4 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
      "data/d16/uniform/indexscan/16-io_uring-3-32GB-prefetch-complex.data"   using 1:4 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
 set title 'timing (warm) / uniform / eic=64' font 'Verdana Bold,12'
-set xrange[0.000760010640148962:100]
+set xrange[0.000700009800137202:100]
 set title 'uniform / eic=64 / sync'
 
 set ylabel 'timing (warm)'

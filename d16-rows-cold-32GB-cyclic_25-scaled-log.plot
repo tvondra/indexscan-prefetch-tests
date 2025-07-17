@@ -10,8 +10,8 @@ set xlabel 'selectivity'
 
 set multiplot layout 4,4 rowsfirst
 set title 'timing (cold) / cyclic\\_25 / eic=0' font 'Verdana Bold,12'
-set xrange[0.00049999960000032:100]
-set yrange[0.01:45054.516]
+set xrange[0.000369999704000237:100]
+set yrange[0.01:52539.886]
 set title 'cyclic\_25 / eic=0 / sync'
 
 set ylabel 'timing (cold)'
@@ -52,8 +52,8 @@ plot "data/d16/cyclic_25/bitmapscan/0-io_uring-3-32GB-master.data"            us
      "data/d16/cyclic_25/indexscan/0-io_uring-3-32GB-prefetch-simple.data"    using 1:3 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
      "data/d16/cyclic_25/indexscan/0-io_uring-3-32GB-prefetch-complex.data"   using 1:3 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
 set title 'timing (cold) / cyclic\\_25 / eic=1' font 'Verdana Bold,12'
-set xrange[0.00049999960000032:100]
-set yrange[0.01:45054.516]
+set xrange[0.000369999704000237:100]
+set yrange[0.01:52539.886]
 set title 'cyclic\_25 / eic=1 / sync'
 
 set ylabel 'timing (cold)'
@@ -94,8 +94,8 @@ plot "data/d16/cyclic_25/bitmapscan/1-io_uring-3-32GB-master.data"            us
      "data/d16/cyclic_25/indexscan/1-io_uring-3-32GB-prefetch-simple.data"    using 1:3 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
      "data/d16/cyclic_25/indexscan/1-io_uring-3-32GB-prefetch-complex.data"   using 1:3 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
 set title 'timing (cold) / cyclic\\_25 / eic=16' font 'Verdana Bold,12'
-set xrange[0.00049999960000032:100]
-set yrange[0.01:45054.516]
+set xrange[0.000369999704000237:100]
+set yrange[0.01:52539.886]
 set title 'cyclic\_25 / eic=16 / sync'
 
 set ylabel 'timing (cold)'
@@ -136,8 +136,8 @@ plot "data/d16/cyclic_25/bitmapscan/16-io_uring-3-32GB-master.data"            u
      "data/d16/cyclic_25/indexscan/16-io_uring-3-32GB-prefetch-simple.data"    using 1:3 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
      "data/d16/cyclic_25/indexscan/16-io_uring-3-32GB-prefetch-complex.data"   using 1:3 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
 set title 'timing (cold) / cyclic\\_25 / eic=64' font 'Verdana Bold,12'
-set xrange[0.00049999960000032:100]
-set yrange[0.01:45054.516]
+set xrange[0.000369999704000237:100]
+set yrange[0.01:52539.886]
 set title 'cyclic\_25 / eic=64 / sync'
 
 set ylabel 'timing (cold)'
