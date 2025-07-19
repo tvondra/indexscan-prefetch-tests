@@ -10,7 +10,7 @@ set xlabel 'selectivity'
 set multiplot layout 4,4 rowsfirst
 set title 'timing (cold) / linear\\_10 / eic=0' font 'Verdana Bold,12'
 set xrange[0.000409999672000262:100]
-set yrange[0:48951.972]
+set yrange[0:59478.031]
 set title 'linear\_10 / eic=0 / sync'
 
 set ylabel 'timing (cold)'
@@ -52,7 +52,7 @@ plot "data/d16/linear_10/bitmapscan/0-io_uring-3-32GB-master.data"            us
      "data/d16/linear_10/indexscan/0-io_uring-3-32GB-prefetch-complex.data"   using 1:3 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
 set title 'timing (cold) / linear\\_10 / eic=1' font 'Verdana Bold,12'
 set xrange[0.000409999672000262:100]
-set yrange[0:48951.972]
+set yrange[0:59478.031]
 set title 'linear\_10 / eic=1 / sync'
 
 set ylabel 'timing (cold)'
@@ -94,7 +94,7 @@ plot "data/d16/linear_10/bitmapscan/1-io_uring-3-32GB-master.data"            us
      "data/d16/linear_10/indexscan/1-io_uring-3-32GB-prefetch-complex.data"   using 1:3 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
 set title 'timing (cold) / linear\\_10 / eic=16' font 'Verdana Bold,12'
 set xrange[0.000409999672000262:100]
-set yrange[0:48951.972]
+set yrange[0:59478.031]
 set title 'linear\_10 / eic=16 / sync'
 
 set ylabel 'timing (cold)'
@@ -136,7 +136,7 @@ plot "data/d16/linear_10/bitmapscan/16-io_uring-3-32GB-master.data"            u
      "data/d16/linear_10/indexscan/16-io_uring-3-32GB-prefetch-complex.data"   using 1:3 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
 set title 'timing (cold) / linear\\_10 / eic=64' font 'Verdana Bold,12'
 set xrange[0.000409999672000262:100]
-set yrange[0:48951.972]
+set yrange[0:59478.031]
 set title 'linear\_10 / eic=64 / sync'
 
 set ylabel 'timing (cold)'
