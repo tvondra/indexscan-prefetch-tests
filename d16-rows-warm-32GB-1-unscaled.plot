@@ -131,6 +131,47 @@ plot "data/d16/cyclic_10/bitmapscan/1-io_uring-3-32GB-master.data"            us
      "data/d16/cyclic_10/indexscan/1-io_uring-3-32GB-master.data"             using 1:4 with points pt 7 ps 0.75 lc rgb "#dd0000" title "indexscan (master)", \
      "data/d16/cyclic_10/indexscan/1-io_uring-3-32GB-prefetch-simple.data"    using 1:4 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
      "data/d16/cyclic_10/indexscan/1-io_uring-3-32GB-prefetch-complex.data"   using 1:4 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
+set title 'timing (warm) / cyclic\\_25 / eic=1' font 'Verdana Bold,12'
+set xrange[0.000419999664000269:100]
+set title 'cyclic\_25 / eic=1 / sync'
+
+set ylabel 'timing (warm)'
+
+plot "data/d16/cyclic_25/bitmapscan/1-sync-3-32GB-master.data"            using 1:4 with points pt 6 ps 0.75 lc rgb "#cc0000" title "bitmapscan (master)", \
+     "data/d16/cyclic_25/bitmapscan/1-sync-3-32GB-prefetch-simple.data"   using 1:4 with points pt 6 ps 0.75 lc rgb "#00dd00" title "bitmapscan (simple)", \
+     "data/d16/cyclic_25/bitmapscan/1-sync-3-32GB-prefetch-complex.data"  using 1:4 with points pt 6 ps 0.75 lc rgb "#0000cc" title "bitmapscan (complex)", \
+     "data/d16/cyclic_25/indexscan/1-sync-3-32GB-master.data"             using 1:4 with points pt 7 ps 0.75 lc rgb "#dd0000" title "indexscan (master)", \
+     "data/d16/cyclic_25/indexscan/1-sync-3-32GB-prefetch-simple.data"    using 1:4 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
+     "data/d16/cyclic_25/indexscan/1-sync-3-32GB-prefetch-complex.data"   using 1:4 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
+
+unset ylabel
+
+set title 'cyclic\_25 / eic=1 / worker-3'
+
+plot "data/d16/cyclic_25/bitmapscan/1-worker-3-32GB-master.data"            using 1:4 with points pt 6 ps 0.75 lc rgb "#cc0000" title "bitmapscan (master)", \
+     "data/d16/cyclic_25/bitmapscan/1-worker-3-32GB-prefetch-simple.data"   using 1:4 with points pt 6 ps 0.75 lc rgb "#00dd00" title "bitmapscan (simple)", \
+     "data/d16/cyclic_25/bitmapscan/1-worker-3-32GB-prefetch-complex.data"  using 1:4 with points pt 6 ps 0.75 lc rgb "#0000cc" title "bitmapscan (complex)", \
+     "data/d16/cyclic_25/indexscan/1-worker-3-32GB-master.data"             using 1:4 with points pt 7 ps 0.75 lc rgb "#dd0000" title "indexscan (master)", \
+     "data/d16/cyclic_25/indexscan/1-worker-3-32GB-prefetch-simple.data"    using 1:4 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
+     "data/d16/cyclic_25/indexscan/1-worker-3-32GB-prefetch-complex.data"   using 1:4 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
+
+set title 'cyclic\_25 / eic=1 / worker-12'
+
+plot "data/d16/cyclic_25/bitmapscan/1-worker-12-32GB-master.data"            using 1:4 with points pt 6 ps 0.75 lc rgb "#cc0000" title "bitmapscan (master)", \
+     "data/d16/cyclic_25/bitmapscan/1-worker-12-32GB-prefetch-simple.data"   using 1:4 with points pt 6 ps 0.75 lc rgb "#00dd00" title "bitmapscan (simple)", \
+     "data/d16/cyclic_25/bitmapscan/1-worker-12-32GB-prefetch-complex.data"  using 1:4 with points pt 6 ps 0.75 lc rgb "#0000cc" title "bitmapscan (complex)", \
+     "data/d16/cyclic_25/indexscan/1-worker-12-32GB-master.data"             using 1:4 with points pt 7 ps 0.75 lc rgb "#dd0000" title "indexscan (master)", \
+     "data/d16/cyclic_25/indexscan/1-worker-12-32GB-prefetch-simple.data"    using 1:4 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
+     "data/d16/cyclic_25/indexscan/1-worker-12-32GB-prefetch-complex.data"   using 1:4 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
+
+set title 'cyclic\_25 / eic=1 / io\_uring'
+
+plot "data/d16/cyclic_25/bitmapscan/1-io_uring-3-32GB-master.data"            using 1:4 with points pt 6 ps 0.75 lc rgb "#cc0000" title "bitmapscan (master)", \
+     "data/d16/cyclic_25/bitmapscan/1-io_uring-3-32GB-prefetch-simple.data"   using 1:4 with points pt 6 ps 0.75 lc rgb "#00dd00" title "bitmapscan (simple)", \
+     "data/d16/cyclic_25/bitmapscan/1-io_uring-3-32GB-prefetch-complex.data"  using 1:4 with points pt 6 ps 0.75 lc rgb "#0000cc" title "bitmapscan (complex)", \
+     "data/d16/cyclic_25/indexscan/1-io_uring-3-32GB-master.data"             using 1:4 with points pt 7 ps 0.75 lc rgb "#dd0000" title "indexscan (master)", \
+     "data/d16/cyclic_25/indexscan/1-io_uring-3-32GB-prefetch-simple.data"    using 1:4 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
+     "data/d16/cyclic_25/indexscan/1-io_uring-3-32GB-prefetch-complex.data"   using 1:4 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
 set title 'timing (warm) / linear / eic=1' font 'Verdana Bold,12'
 set xrange[0.000989999208000634:100]
 set title 'linear / eic=1 / sync'
@@ -254,8 +295,49 @@ plot "data/d16/linear_10/bitmapscan/1-io_uring-3-32GB-master.data"            us
      "data/d16/linear_10/indexscan/1-io_uring-3-32GB-master.data"             using 1:4 with points pt 7 ps 0.75 lc rgb "#dd0000" title "indexscan (master)", \
      "data/d16/linear_10/indexscan/1-io_uring-3-32GB-prefetch-simple.data"    using 1:4 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
      "data/d16/linear_10/indexscan/1-io_uring-3-32GB-prefetch-complex.data"   using 1:4 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
+set title 'timing (warm) / linear\\_25 / eic=1' font 'Verdana Bold,12'
+set xrange[0.000449999640000288:100]
+set title 'linear\_25 / eic=1 / sync'
+
+set ylabel 'timing (warm)'
+
+plot "data/d16/linear_25/bitmapscan/1-sync-3-32GB-master.data"            using 1:4 with points pt 6 ps 0.75 lc rgb "#cc0000" title "bitmapscan (master)", \
+     "data/d16/linear_25/bitmapscan/1-sync-3-32GB-prefetch-simple.data"   using 1:4 with points pt 6 ps 0.75 lc rgb "#00dd00" title "bitmapscan (simple)", \
+     "data/d16/linear_25/bitmapscan/1-sync-3-32GB-prefetch-complex.data"  using 1:4 with points pt 6 ps 0.75 lc rgb "#0000cc" title "bitmapscan (complex)", \
+     "data/d16/linear_25/indexscan/1-sync-3-32GB-master.data"             using 1:4 with points pt 7 ps 0.75 lc rgb "#dd0000" title "indexscan (master)", \
+     "data/d16/linear_25/indexscan/1-sync-3-32GB-prefetch-simple.data"    using 1:4 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
+     "data/d16/linear_25/indexscan/1-sync-3-32GB-prefetch-complex.data"   using 1:4 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
+
+unset ylabel
+
+set title 'linear\_25 / eic=1 / worker-3'
+
+plot "data/d16/linear_25/bitmapscan/1-worker-3-32GB-master.data"            using 1:4 with points pt 6 ps 0.75 lc rgb "#cc0000" title "bitmapscan (master)", \
+     "data/d16/linear_25/bitmapscan/1-worker-3-32GB-prefetch-simple.data"   using 1:4 with points pt 6 ps 0.75 lc rgb "#00dd00" title "bitmapscan (simple)", \
+     "data/d16/linear_25/bitmapscan/1-worker-3-32GB-prefetch-complex.data"  using 1:4 with points pt 6 ps 0.75 lc rgb "#0000cc" title "bitmapscan (complex)", \
+     "data/d16/linear_25/indexscan/1-worker-3-32GB-master.data"             using 1:4 with points pt 7 ps 0.75 lc rgb "#dd0000" title "indexscan (master)", \
+     "data/d16/linear_25/indexscan/1-worker-3-32GB-prefetch-simple.data"    using 1:4 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
+     "data/d16/linear_25/indexscan/1-worker-3-32GB-prefetch-complex.data"   using 1:4 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
+
+set title 'linear\_25 / eic=1 / worker-12'
+
+plot "data/d16/linear_25/bitmapscan/1-worker-12-32GB-master.data"            using 1:4 with points pt 6 ps 0.75 lc rgb "#cc0000" title "bitmapscan (master)", \
+     "data/d16/linear_25/bitmapscan/1-worker-12-32GB-prefetch-simple.data"   using 1:4 with points pt 6 ps 0.75 lc rgb "#00dd00" title "bitmapscan (simple)", \
+     "data/d16/linear_25/bitmapscan/1-worker-12-32GB-prefetch-complex.data"  using 1:4 with points pt 6 ps 0.75 lc rgb "#0000cc" title "bitmapscan (complex)", \
+     "data/d16/linear_25/indexscan/1-worker-12-32GB-master.data"             using 1:4 with points pt 7 ps 0.75 lc rgb "#dd0000" title "indexscan (master)", \
+     "data/d16/linear_25/indexscan/1-worker-12-32GB-prefetch-simple.data"    using 1:4 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
+     "data/d16/linear_25/indexscan/1-worker-12-32GB-prefetch-complex.data"   using 1:4 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
+
+set title 'linear\_25 / eic=1 / io\_uring'
+
+plot "data/d16/linear_25/bitmapscan/1-io_uring-3-32GB-master.data"            using 1:4 with points pt 6 ps 0.75 lc rgb "#cc0000" title "bitmapscan (master)", \
+     "data/d16/linear_25/bitmapscan/1-io_uring-3-32GB-prefetch-simple.data"   using 1:4 with points pt 6 ps 0.75 lc rgb "#00dd00" title "bitmapscan (simple)", \
+     "data/d16/linear_25/bitmapscan/1-io_uring-3-32GB-prefetch-complex.data"  using 1:4 with points pt 6 ps 0.75 lc rgb "#0000cc" title "bitmapscan (complex)", \
+     "data/d16/linear_25/indexscan/1-io_uring-3-32GB-master.data"             using 1:4 with points pt 7 ps 0.75 lc rgb "#dd0000" title "indexscan (master)", \
+     "data/d16/linear_25/indexscan/1-io_uring-3-32GB-prefetch-simple.data"    using 1:4 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
+     "data/d16/linear_25/indexscan/1-io_uring-3-32GB-prefetch-complex.data"   using 1:4 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
 set title 'timing (warm) / uniform / eic=1' font 'Verdana Bold,12'
-set xrange[0.000810011340158762:100]
+set xrange[0.000640008960125442:100]
 set title 'uniform / eic=1 / sync'
 
 set ylabel 'timing (warm)'
