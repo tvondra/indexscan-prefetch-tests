@@ -10,7 +10,7 @@ set xlabel 'selectivity'
 set multiplot layout 9,4 rowsfirst
 set title 'timing (warm) / cyclic / eic=16' font 'Verdana Bold,12'
 set xrange[0.00099999920000064:100]
-set yrange[0:3075.073]
+set yrange[0:15685.721]
 set title 'cyclic / eic=16 / sync'
 
 set ylabel 'timing (warm)'
@@ -52,7 +52,7 @@ plot "data/d16/cyclic/bitmapscan/16-io_uring-3-32GB-master.data"            usin
      "data/d16/cyclic/indexscan/16-io_uring-3-32GB-prefetch-complex.data"   using 1:4 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
 set title 'timing (warm) / cyclic\\_1 / eic=16' font 'Verdana Bold,12'
 set xrange[0.000489999608000314:100]
-set yrange[0:4288.334]
+set yrange[0:19464.931]
 set title 'cyclic\_1 / eic=16 / sync'
 
 set ylabel 'timing (warm)'
@@ -94,7 +94,7 @@ plot "data/d16/cyclic_1/bitmapscan/16-io_uring-3-32GB-master.data"            us
      "data/d16/cyclic_1/indexscan/16-io_uring-3-32GB-prefetch-complex.data"   using 1:4 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
 set title 'timing (warm) / cyclic\\_10 / eic=16' font 'Verdana Bold,12'
 set xrange[0.000369999704000237:100]
-set yrange[0:7063.979]
+set yrange[0:20964.827]
 set title 'cyclic\_10 / eic=16 / sync'
 
 set ylabel 'timing (warm)'
@@ -136,7 +136,7 @@ plot "data/d16/cyclic_10/bitmapscan/16-io_uring-3-32GB-master.data"            u
      "data/d16/cyclic_10/indexscan/16-io_uring-3-32GB-prefetch-complex.data"   using 1:4 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
 set title 'timing (warm) / cyclic\\_25 / eic=16' font 'Verdana Bold,12'
 set xrange[0.000419999664000269:100]
-set yrange[0:6875.114]
+set yrange[0:18061.88]
 set title 'cyclic\_25 / eic=16 / sync'
 
 set ylabel 'timing (warm)'
@@ -178,7 +178,7 @@ plot "data/d16/cyclic_25/bitmapscan/16-io_uring-3-32GB-master.data"            u
      "data/d16/cyclic_25/indexscan/16-io_uring-3-32GB-prefetch-complex.data"   using 1:4 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
 set title 'timing (warm) / linear / eic=16' font 'Verdana Bold,12'
 set xrange[0.000989999208000634:100]
-set yrange[0:1439.464]
+set yrange[0:3563.339]
 set title 'linear / eic=16 / sync'
 
 set ylabel 'timing (warm)'
@@ -219,8 +219,8 @@ plot "data/d16/linear/bitmapscan/16-io_uring-3-32GB-master.data"            usin
      "data/d16/linear/indexscan/16-io_uring-3-32GB-prefetch-simple.data"    using 1:4 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
      "data/d16/linear/indexscan/16-io_uring-3-32GB-prefetch-complex.data"   using 1:4 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
 set title 'timing (warm) / linear\\_1 / eic=16' font 'Verdana Bold,12'
-set xrange[0.000580008120113682:100]
-set yrange[0:4310.008]
+set xrange[0.000530007420103881:100]
+set yrange[0:19688.991]
 set title 'linear\_1 / eic=16 / sync'
 
 set ylabel 'timing (warm)'
@@ -261,8 +261,8 @@ plot "data/d16/linear_1/bitmapscan/16-io_uring-3-32GB-master.data"            us
      "data/d16/linear_1/indexscan/16-io_uring-3-32GB-prefetch-simple.data"    using 1:4 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
      "data/d16/linear_1/indexscan/16-io_uring-3-32GB-prefetch-complex.data"   using 1:4 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
 set title 'timing (warm) / linear\\_10 / eic=16' font 'Verdana Bold,12'
-set xrange[0.000469999624000301:100]
-set yrange[0:7063.238]
+set xrange[0.000449999640000288:100]
+set yrange[0:20675.496]
 set title 'linear\_10 / eic=16 / sync'
 
 set ylabel 'timing (warm)'
@@ -303,8 +303,8 @@ plot "data/d16/linear_10/bitmapscan/16-io_uring-3-32GB-master.data"            u
      "data/d16/linear_10/indexscan/16-io_uring-3-32GB-prefetch-simple.data"    using 1:4 with points pt 7 ps 0.75 lc rgb "#00cc00" title "indexscan (simple)", \
      "data/d16/linear_10/indexscan/16-io_uring-3-32GB-prefetch-complex.data"   using 1:4 with points pt 7 ps 0.75 lc rgb "#0000dd" title "indexscan (complex)"
 set title 'timing (warm) / linear\\_25 / eic=16' font 'Verdana Bold,12'
-set xrange[0.000449999640000288:100]
-set yrange[0:6888.267]
+set xrange[0.000409999672000262:100]
+set yrange[0:17977.887]
 set title 'linear\_25 / eic=16 / sync'
 
 set ylabel 'timing (warm)'
